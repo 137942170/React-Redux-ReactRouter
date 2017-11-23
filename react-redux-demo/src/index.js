@@ -1,3 +1,7 @@
+/**
+ * 定义路由
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore, applyMiddleware} from 'redux'
@@ -7,7 +11,9 @@ import { Provider } from 'react-redux';
 import Login from './Login'
 import DashBoard from './DashBoard'
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
-
+/**
+ * 获取所有store中的数据
+ */
 const store = createStore(reducers, applyMiddleware(thunk))
 ReactDOM.render(
     ( 

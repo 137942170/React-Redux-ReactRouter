@@ -1,8 +1,9 @@
 const ADD = 'ADD'
 const REDUCE = 'REDUCE'
-
+const TEST = 'TEST'
 export function counter (state=0, action) {
     switch (action.type) {
+        case TEST: 
         case ADD:
             return state +1
         case REDUCE:
@@ -12,6 +13,13 @@ export function counter (state=0, action) {
     }
 }
 
+
+export function test() {
+    console.log(test)
+    return {
+        type: TEST
+    }
+}
 export function add() {
     return {type:ADD}
 } 
